@@ -14,6 +14,12 @@ import iconImg3 from "../assets/Icon (3).png";
 import companyimg1 from "../assets/chickcompany1.jpg";
 import companyimg2 from "../assets/chickcompany2.jpg";
 import companyimg3 from "../assets/chickcompany3.jpg";
+import agriculture from "../assets/agriculture-outline.png";
+import healthicons from "../assets/healthicons_dairy.png";
+import poultry from "../assets/poultry-leg.png";
+import emojione_chicken from "../assets/emojione_chicken.png";
+import fishicon from "../assets/fish.png";
+import noto_poultry from "../assets/noto_poultry-leg.png";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 import Popup from "reactjs-popup";
 import { IoIosCloseCircleOutline } from "react-icons/io";
@@ -241,12 +247,26 @@ export const HomePage = () => {
         </div>
       </div>
       {/* our company */}
-      <div className="bg-[#1976D3D9] p-5">
-       <h1 className="text-center text-[25px] md:text-[92px] font-[800] py-3 expo text-white">Our Company's</h1>
-        <div className="space-y-2 grid sm:space-y-0 md:grid-cols-2 lg:flex justify-center lg:px-20 gap-3 p-4">
-             {/* company 1 */}
+      <div className="bg-[#1976D3D9] h-[600px] p-5 relative">
+        <img className="absolute left-0 top-[60%] sm:left-[3%] animate-pulse duration-1000" src={agriculture} alt="" />
+        <img className="absolute left-[25%] top-[10%] sm:top-[25%] sm:left-[15%] animate-pulse duration-2000" src={agriculture} alt="" />
+        <img className="absolute right-0 bottom-0 p-4 animate-pulse duration-3000" src={noto_poultry} alt="" />
+        <img className="absolute left-[30%] h-[70px] sm:h-[100px] sm:left-[50%] top-[25%] p-4 animate-pulse duration-4000" src={noto_poultry} alt="" />
+        <img className="absolute right-[23%] top-[2%] animate-pulse duration-2000" src={fishicon} alt="" />
+        <img className="absolute bottom-[3%] left-[0%] animate-pulse duration-2000" src={emojione_chicken} alt="" />
+        <img className="absolute top-[15%] h-[70px] sm:h-[120px] right-[25%] sm:top-[25%] sm:right-[18%] animate-pulse duration-5000" src={emojione_chicken} alt="" />
+        <img className="absolute h-[60px] sm:h-[110px] right-0 p-4 animate-pulse duration-6000" src={poultry} alt="" />
+        <img className="absolute top-[23%] p-4 animate-pulse duration-7000" src={poultry} alt="" />
+        <img className="absolute left-[10%] animate-pulse duration-8000" src={healthicons} alt="" />
+        <img className="absolute right-[10%] top-[15%] z-0 animate-pulse duration-9000" src={healthicons} alt="" />
+
+        <h1 className="text-center text-[25px] md:text-[50px] lg:text-[92px] font-[800] py-3 expo text-white">
+          Our Company's
+        </h1>
+        <div className="space-y-2 mt-30 grid sm:space-y-0 md:grid-cols-2 lg:flex justify-center lg:px-20 gap-3 p-4">
+          {/* company 1 */}
           <div className="">
-            <img className="w-[522px] h-[300px]" src={companyimg1} alt="" />
+            <img className="w-[522px] rounded-tl-[25px] h-[300px]" src={companyimg2} alt="" />
             <div className="expo bg-[#EEF3FF] py-7 p-4 relative rounded-b-2xl px-5">
               <div className="bg-[#FF6600]  absolute top-[-30%] w-[300px] flex items-center justify-center p-2 rounded-full">
                 <CiLocationOn className="text-white text-2xl" />
@@ -263,9 +283,9 @@ export const HomePage = () => {
               </div>
             </div>
           </div>
-             {/* company 2 */}
+          {/* company 2 */}
           <div className="">
-            <img className="w-[522px] h-[300px]" src={companyimg2} alt="" />
+            <img className="w-[522px] h-[300px]" src={companyimg3} alt="" />
             <div className="expo bg-[#EEF3FF] py-7 p-4 relative rounded-b-2xl px-5">
               <div className="bg-[#FF6600] absolute top-[-30%] w-[300px] flex items-center justify-center p-2 rounded-full">
                 <CiLocationOn className="text-white text-2xl" />
@@ -282,9 +302,9 @@ export const HomePage = () => {
               </div>
             </div>
           </div>
-             {/* company 3 */}
+          {/* company 3 */}
           <div className="">
-            <img className="w-[522px] h-[300px]" src={companyimg3} alt="" />
+            <img className="w-[522px] h-[300px] rounded-tr-[25px]" src={companyimg1} alt="" />
             <div className="expo bg-[#EEF3FF] py-7 relative rounded-b-2xl px-5">
               <div className="bg-[#FF6600] absolute top-[-30%] w-[300px] flex items-center justify-center p-2 rounded-full">
                 <CiLocationOn className="text-white text-2xl" />
