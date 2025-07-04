@@ -445,7 +445,7 @@ export const HomePage = () => {
                   Other
                 </button>
               </div>
-              <form className="flex flex-col gap-40 mt-5">
+              <form className="flex flex-col gap-20 md:gap-40 mt-5">
                 <div className="flex flex-col gap-5 ">
                   <input
                   required
