@@ -20,11 +20,14 @@ import poultry from "../assets/poultry-leg.png";
 import emojione_chicken from "../assets/emojione_chicken.png";
 import fishicon from "../assets/fish.png";
 import noto_poultry from "../assets/noto_poultry-leg.png";
+import team1 from "../assets/team1.jpg";
+import team2 from "../assets/team2.jpg";
+import team3 from "../assets/team3.jpg";
 import { MdOutlineMail, MdOutlineSlowMotionVideo } from "react-icons/md";
 import Popup from "reactjs-popup";
 import { IoIosCloseCircleOutline, IoIosSend } from "react-icons/io";
 import { CiInstagram, CiLocationOn } from "react-icons/ci";
-import { FaFacebook, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { TiSocialFacebook } from "react-icons/ti";
 export const HomePage = () => {
@@ -384,7 +387,10 @@ export const HomePage = () => {
       </div>
 
       {/* Get Dealership  */}
-      <section id="dealership" className="p-5 duration-500 mt-220 md:mt-120 lg:mt-35">
+      <section
+        id="dealership"
+        className="p-5 duration-500 mt-220 md:mt-120 lg:mt-35"
+      >
         <h1 className="text-[48px] font-[700] text-center">Get Dealership </h1>
         <div className="flex justify-center mt-5">
           .
@@ -397,21 +403,25 @@ export const HomePage = () => {
               </h2>
               {/* main */}
               <div className="flex flex-col gap-25">
-             {/* con phon */}
-             <div className="flex flex-col gap-6">
-                   <div className="flex items-center gap-2">
-                  <MdOutlineMail className="font-[500] text-[20px] text-[#1976D3]"/>
-                  <h1 className="text-[20px] font-[500]">Loremispum@gmail.com</h1>
+                {/* con phon */}
+                <div className="flex flex-col gap-6">
+                  <div className="flex items-center gap-2">
+                    <MdOutlineMail className="font-[500] text-[20px] text-[#1976D3]" />
+                    <h1 className="text-[20px] font-[500]">
+                      Loremispum@gmail.com
+                    </h1>
+                  </div>
+                  <div className="flex items-center px-3 shadow-[2px_3px_5px_rgba(0,0,0,0.4)] gap-2 bg-[#7BC6F7] p-2 rounded text-[20px] font-[500] popins">
+                    <FaPhoneAlt />
+                    <h1>+123 456 789</h1>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <IoLocationSharp className="font-[500] text-[20px] text-[#1976D3]" />
+                    <h1 className="text-[20px] font-[500]">
+                      123 Street 456 House
+                    </h1>
+                  </div>
                 </div>
-                <div className="flex items-center px-3 shadow-[2px_3px_5px_rgba(0,0,0,0.4)] gap-2 bg-[#7BC6F7] p-2 rounded text-[20px] font-[500] popins">
-                  <FaPhoneAlt />
-                  <h1>+123 456 789</h1>
-                </div>
-                <div className="flex items-center gap-2">
-                  <IoLocationSharp className="font-[500] text-[20px] text-[#1976D3]"/>
-                  <h1 className="text-[20px] font-[500]">123 Street 456 House</h1>
-                </div>
-             </div>
                 <div className="flex items-center gap-2">
                   <div className="text-white bg-[#1976D3] duration-700 hover:text-[#1976D3] hover:bg-white shadow rounded-full p-2 w-[64px] h-[64px] flex justify-center items-center text-[48px]">
                     <TiSocialFacebook />
@@ -427,7 +437,9 @@ export const HomePage = () => {
             </div>
             {/* form */}
             <div className="bg-white  p-5 rounded md:w-[500px] h-[600px]  relative">
-              <h1 className="text-[20px] font-[500] text-[#2E0249] popins">I’m interested in...</h1>
+              <h1 className="text-[20px] font-[500] text-[#2E0249] popins">
+                I’m interested in...
+              </h1>
               <div className="popins flex items-center mt-3 flex-wrap gap-3">
                 <button className="rounded duration-500 hover:text-[#ffffff] hover:bg-[#7BC6F7] shadow text-[20px] font-[500] p-2 bg-[#7BC6F7] px-5">
                   Delership
@@ -448,30 +460,172 @@ export const HomePage = () => {
               <form className="flex flex-col gap-20 md:gap-40 mt-5">
                 <div className="flex flex-col gap-5 ">
                   <input
-                  required
+                    required
                     type="text"
-                   className="border-b-2 p-2 duration-500 outline-0 hover:border-[#7BC6F7]"
+                    className="border-b-2 p-2 duration-500 outline-0 hover:border-[#7BC6F7]"
                     placeholder="You name"
-                    
                   />
                   <input
-                  required
+                    required
                     type="text"
-                  className="border-b-2 p-2 duration-500 outline-0 hover:border-[#7BC6F7]"
+                    className="border-b-2 p-2 duration-500 outline-0 hover:border-[#7BC6F7]"
                     placeholder="Email"
                   />
-                  <textarea required
+                  <textarea
+                    required
                     type="text"
                     className="border-b-2 p-2 duration-500 outline-0 hover:border-[#7BC6F7]"
                     placeholder="Message"
                   />
                 </div>
 
-                <button className="text-[20px] duration-700 hover:text-[#1976D3]
-                 hover:bg-[rgba(25,118,211,0.5)] shadow w-[250px] py-1 font-[500] text-center flex rounded items-center justify-center gap-3 px-4 bg-[#7BC6F7]">
+                <button
+                  className="text-[20px] duration-700 hover:text-[#1976D3]
+                 hover:bg-[rgba(25,118,211,0.5)] shadow w-[250px] py-1 font-[500] text-center flex rounded items-center justify-center gap-3 px-4 bg-[#7BC6F7]"
+                >
                   <IoIosSend /> Send Message
                 </button>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* our teams */}
+
+      <section className="bg-[#F1F4FB] flex flex-col justify-center items-center p-5">
+        <div className="lg:w-[1220px] p-3">
+          {/* title */}
+          <div>
+            <h1 className="text-[48px] font-[700] text-center">Our Team</h1>
+            <p className="font-[400] expo mt-3 text-center">
+              orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturi,
+            </p>
+
+            {/* feuture team */}
+            <div className="mt-10 grid md:grid-cols-2 lg:flex lg:flex-wrap gap-4">
+              <div className="lg:w-[375px] h-[500px] relative">
+                <img
+                  className="w-full h-[400px] rounded duration-500 hover:scale-101"
+                  src={team1}
+                  alt=""
+                />
+                <div className="bg-[#F9F4F4] shadow-lg absolute bottom-[7%] w-full rounded p-5 leading-6">
+                  <h1 className="text-[23px] font-[800] expo rounded">
+                    Marc Chiasson
+                  </h1>
+                  <p className="text-[#494949] font-[400] text-[16px]">
+                    Marc Chiasson
+                  </p>
+                </div>
+              </div>
+              <div className="lg:w-[375px] h-[500px] relative">
+                <img
+                  className="w-full h-[400px] rounded duration-500 hover:scale-101"
+                  src={team2}
+                  alt=""
+                />
+                <div className="bg-[#F9F4F4] shadow-lg absolute bottom-[7%] w-full rounded p-5 leading-6">
+                  <h1 className="text-[23px] font-[800] expo rounded">
+                    Qalim Thams
+                  </h1>
+                  <p className="text-[#494949] font-[400] text-[16px]">
+                    Qalim Thams
+                  </p>
+                </div>
+              </div>
+              <div className="lg:w-[375px] h-[500px] relative">
+                <img
+                  className="w-full h-[400px] rounded duration-500 hover:scale-101"
+                  src={team3}
+                  alt=""
+                />
+                <div className="bg-[#F9F4F4] shadow-lg absolute bottom-[7%] w-full rounded p-5 leading-6">
+                  <h1 className="text-[23px] font-[800] expo rounded">
+                    Millar Chiasson
+                  </h1>
+                  <p className="text-[#494949] font-[400] text-[16px]">
+                    Millar Chiasson
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* subscripe */}
+        <div className="bg-[#1976D3C7] p-4 md:p-2 flex  justify-center items-center rounded-2xl h-[500px] relative">
+          {/* makiinada cagaf talo dhanka bidix u dhaw */}
+          <img
+            className="absolute left-0 bottom-[10%] sm:left-[30%] animate-pulse duration-1000"
+            src={agriculture}
+            alt=""
+          />
+          {/* makiin taalo dhank sare ee bidix */}
+          <img
+            className="absolute left-[25%] top-[10%] sm:top-[20%] sm:left-[15%] animate-pulse duration-2000"
+            src={agriculture}
+            alt=""
+          />
+          {/* laf talo dhanka midid ee hoose */}
+          <img
+            className="absolute right-[10%] bottom-0 p-4 animate-pulse duration-3000"
+            src={noto_poultry}
+            alt=""
+          />
+
+          <img
+            className="absolute right-[40%] bottom-[13%] animate-pulse duration-2000"
+            src={fishicon}
+            alt=""
+          />
+          {/* diiq hoose dhanka bidix */}
+          <img
+            className="absolute bottom-[10%] left-[10%] animate-pulse duration-2000"
+            src={emojione_chicken}
+            alt=""
+          />
+          {/* diiq yalo dhanka midig ee sare */}
+          <img
+            className="absolute top-[15%] h-[70px] sm:h-[120px] right-[25%] sm:top-[15%] sm:right-[23%] animate-pulse duration-5000"
+            src={emojione_chicken}
+            alt=""
+          />
+
+          <img
+            className="absolute top-[-5%] right-[38%] p-4 animate-pulse duration-7000"
+            src={poultry}
+            alt=""
+          />
+          {/* galas yalo dhanka bidix kor */}
+          <img
+            className="absolute left-[43%] top-[30%] animate-pulse duration-8000"
+            src={healthicons}
+            alt=""
+          />
+          <img
+            className="absolute right-[10%] top-[15%] z-0 animate-pulse duration-9000"
+            src={healthicons}
+            alt=""
+          />
+          <div className=" md:flex items-center  flex-wrap gap-5 md:justify-center">
+            <div className="text-white px-3">
+              <h1 className="text-[38px] expo font-[800]">
+                Lorem 10% ipsum dolor sit amet
+              </h1>
+              <p className="text-[20px] expo font-[400]">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </p>
+            </div>
+            <div className="flex mt-10 md:mt-0 justify-between  flex-wrap items-center rounded md:w-[600px] bg-white md:rounded-full p-3">
+              <h1 className="text-[19px] font-[300] uppercase p-2">
+                Lorem Ispurm into edlipoid
+              </h1>
+              <button className="bg-[#FF6600] relative z-50 rounded-full text-[15px] w-[170px] p-3 text-white shadow-[4px_5px_10px_rgba(0,0,0,0.4)]">
+                More Explore
+              </button>
             </div>
           </div>
         </div>
