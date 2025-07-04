@@ -14,8 +14,8 @@ export const HeaderPage = () => {
 
   return (
     <>
-      <header className="flex relative justify-between px-10 py-2 items-center">
-        <nav className="flex relative gap-3 sm:gap-6 items-center">
+      <header className="flex fixed z-20 bg-white justify-between w-full shadow-lg px-10 py-2 items-center">
+        <nav className="flex  gap-3   sm:gap-6 items-center">
           {
             !showNav ? <IoIosMenu onClick={menuClick} className="text-4xl cursor-pointer lg:hidden" /> 
             : <IoMdCloseCircleOutline onClick={()=>setShowNav(false)} className="text-4xl cursor-pointer lg:hidden"/>
@@ -24,7 +24,7 @@ export const HeaderPage = () => {
           {/* desktop nav*/}
           <ul className="gap-6 text-[24px] hidden lg:flex">
             <li className="duration-500 hover:text-[#7BC6F7]">
-              <a href="">Home</a>{" "}
+              <a href="#home">Home</a>{" "}
             </li>
             <li className="duration-500 hover:text-[#7BC6F7]">
               {" "}
@@ -49,7 +49,7 @@ export const HeaderPage = () => {
           </ul>
           {/* logo */}
           <div className="">
-            <h1 className="text-[30px] sm:text-[40px] duration-500 hover:text-[#7BC6F7]">BeMotion</h1>
+            <a href="#home" className="text-[30px] sm:text-[40px] duration-500 hover:text-[#7BC6F7]">BeMotion</a>
           </div>
           {/* social icons */}
         </nav>
@@ -69,7 +69,7 @@ export const HeaderPage = () => {
           <ul className="flex flex-col text-[24px] gap-4 py-2 ml-5 w-full">
             <li className="border-b-1 p-1  duration-500 hover:bg-[#7BC6F7] hover:rounded hover:text-white">
              
-              <a href="">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li className="border-b-1 p-1  duration-500 hover:bg-[#7BC6F7] hover:rounded hover:text-white">
              

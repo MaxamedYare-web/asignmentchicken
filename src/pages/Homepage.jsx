@@ -30,7 +30,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 export const HomePage = () => {
   return (
     <>
-      <section>
+      <section id="home">
         <div className="relative">
           <div
             className="h-screen bg-cover bg-center bg-no-repeat "
@@ -50,7 +50,7 @@ export const HomePage = () => {
         <div className="w-[1240px] md:flex items-end justify-between">
           <div className="flex flex-col items-center p-2 justify-center relative">
             <img src={expImg} alt="" />
-            <div className="flex items-center justify-center absolute w-[430px] bg-white bottom-[0] z-10 expo shadow-[2px_2px_6px_1px_rgba(0,0,0,0.2)]  rounded-full p-3">
+            <div className="flex items-center justify-center absolute md:w-[430px] bg-white bottom-[0] z-10 expo shadow-[2px_2px_6px_1px_rgba(0,0,0,0.2)]  rounded-full p-4">
               <h1 className="text-5xl sm:text-[68px] mt-3 font-[600] text-[#FF6600] ">
                 25
               </h1>
