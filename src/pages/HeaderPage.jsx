@@ -10,9 +10,8 @@ export const HeaderPage = () => {
   const menuClick = (e) => {
     e.preventDefault();
     setShowNav(true);
-    console.log("hjjd");
   };
-  console.log(showNav);
+
   return (
     <>
       <header className="flex relative justify-between px-10 py-2 items-center">
@@ -37,7 +36,7 @@ export const HeaderPage = () => {
             </li>
             <li className="duration-500 hover:text-[#7BC6F7]">
               {" "}
-              <a href="">Dealership</a>
+              <a  href="#dealership">Dealership</a>
             </li>
             <li className="duration-500 hover:text-[#7BC6F7]">
               {" "}
@@ -82,7 +81,7 @@ export const HeaderPage = () => {
             </li>
             <li className="border-b-1 p-1  duration-500 hover:bg-[#7BC6F7] hover:rounded hover:text-white">
              
-              <a href="">Dealership</a>
+              <a href="#dealership">Dealership</a>
             </li>
             <li className="border-b-1 p-1  duration-500 hover:bg-[#7BC6F7] hover:rounded hover:text-white">
              

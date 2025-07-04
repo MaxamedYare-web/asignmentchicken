@@ -20,10 +20,13 @@ import poultry from "../assets/poultry-leg.png";
 import emojione_chicken from "../assets/emojione_chicken.png";
 import fishicon from "../assets/fish.png";
 import noto_poultry from "../assets/noto_poultry-leg.png";
-import { MdOutlineSlowMotionVideo } from "react-icons/md";
+import { MdOutlineMail, MdOutlineSlowMotionVideo } from "react-icons/md";
 import Popup from "reactjs-popup";
-import { IoIosCloseCircleOutline } from "react-icons/io";
-import { CiLocationOn } from "react-icons/ci";
+import { IoIosCloseCircleOutline, IoIosSend } from "react-icons/io";
+import { CiInstagram, CiLocationOn } from "react-icons/ci";
+import { FaFacebook, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
+import { TiSocialFacebook } from "react-icons/ti";
 export const HomePage = () => {
   return (
     <>
@@ -247,18 +250,62 @@ export const HomePage = () => {
         </div>
       </div>
       {/* our company */}
-      <div className="bg-[#1976D3D9] h-[600px] p-5 relative">
-        <img className="absolute left-0 top-[60%] sm:left-[3%] animate-pulse duration-1000" src={agriculture} alt="" />
-        <img className="absolute left-[25%] top-[10%] sm:top-[25%] sm:left-[15%] animate-pulse duration-2000" src={agriculture} alt="" />
-        <img className="absolute right-0 bottom-0 p-4 animate-pulse duration-3000" src={noto_poultry} alt="" />
-        <img className="absolute left-[30%] h-[70px] sm:h-[100px] sm:left-[50%] top-[25%] p-4 animate-pulse duration-4000" src={noto_poultry} alt="" />
-        <img className="absolute right-[23%] top-[2%] animate-pulse duration-2000" src={fishicon} alt="" />
-        <img className="absolute bottom-[3%] left-[0%] animate-pulse duration-2000" src={emojione_chicken} alt="" />
-        <img className="absolute top-[15%] h-[70px] sm:h-[120px] right-[25%] sm:top-[25%] sm:right-[18%] animate-pulse duration-5000" src={emojione_chicken} alt="" />
-        <img className="absolute h-[60px] sm:h-[110px] right-0 p-4 animate-pulse duration-6000" src={poultry} alt="" />
-        <img className="absolute top-[23%] p-4 animate-pulse duration-7000" src={poultry} alt="" />
-        <img className="absolute left-[10%] animate-pulse duration-8000" src={healthicons} alt="" />
-        <img className="absolute right-[10%] top-[15%] z-0 animate-pulse duration-9000" src={healthicons} alt="" />
+      <div className="bg-[#1976D3D9] mt-8 h-[600px] p-5 relative">
+        <img
+          className="absolute left-0 top-[60%] sm:left-[3%] animate-pulse duration-1000"
+          src={agriculture}
+          alt=""
+        />
+        <img
+          className="absolute left-[25%] top-[10%] sm:top-[25%] sm:left-[15%] animate-pulse duration-2000"
+          src={agriculture}
+          alt=""
+        />
+        <img
+          className="absolute right-0 bottom-0 p-4 animate-pulse duration-3000"
+          src={noto_poultry}
+          alt=""
+        />
+        <img
+          className="absolute left-[30%] h-[70px] sm:h-[100px] sm:left-[50%] top-[25%] p-4 animate-pulse duration-4000"
+          src={noto_poultry}
+          alt=""
+        />
+        <img
+          className="absolute right-[23%] top-[2%] animate-pulse duration-2000"
+          src={fishicon}
+          alt=""
+        />
+        <img
+          className="absolute bottom-[3%] left-[0%] animate-pulse duration-2000"
+          src={emojione_chicken}
+          alt=""
+        />
+        <img
+          className="absolute top-[15%] h-[70px] sm:h-[120px] right-[25%] sm:top-[25%] sm:right-[18%] animate-pulse duration-5000"
+          src={emojione_chicken}
+          alt=""
+        />
+        <img
+          className="absolute h-[60px] sm:h-[110px] right-0 p-4 animate-pulse duration-6000"
+          src={poultry}
+          alt=""
+        />
+        <img
+          className="absolute top-[23%] p-4 animate-pulse duration-7000"
+          src={poultry}
+          alt=""
+        />
+        <img
+          className="absolute left-[10%] animate-pulse duration-8000"
+          src={healthicons}
+          alt=""
+        />
+        <img
+          className="absolute right-[10%] top-[15%] z-0 animate-pulse duration-9000"
+          src={healthicons}
+          alt=""
+        />
 
         <h1 className="text-center text-[25px] md:text-[50px] lg:text-[92px] font-[800] py-3 expo text-white">
           Our Company's
@@ -266,7 +313,11 @@ export const HomePage = () => {
         <div className="space-y-2 mt-30 grid sm:space-y-0 md:grid-cols-2 lg:flex justify-center lg:px-20 gap-3 p-4">
           {/* company 1 */}
           <div className="">
-            <img className="w-[522px] rounded-tl-[25px] h-[300px]" src={companyimg2} alt="" />
+            <img
+              className="w-[522px] rounded-tl-[25px] h-[300px] duration-500 hover:scale-102"
+              src={companyimg2}
+              alt=""
+            />
             <div className="expo bg-[#EEF3FF] py-7 p-4 relative rounded-b-2xl px-5">
               <div className="bg-[#FF6600]  absolute top-[-30%] w-[300px] flex items-center justify-center p-2 rounded-full">
                 <CiLocationOn className="text-white text-2xl" />
@@ -285,7 +336,11 @@ export const HomePage = () => {
           </div>
           {/* company 2 */}
           <div className="">
-            <img className="w-[522px] h-[300px]" src={companyimg3} alt="" />
+            <img
+              className="w-[522px] h-[300px] duration-500 hover:scale-102"
+              src={companyimg3}
+              alt=""
+            />
             <div className="expo bg-[#EEF3FF] py-7 p-4 relative rounded-b-2xl px-5">
               <div className="bg-[#FF6600] absolute top-[-30%] w-[300px] flex items-center justify-center p-2 rounded-full">
                 <CiLocationOn className="text-white text-2xl" />
@@ -304,7 +359,11 @@ export const HomePage = () => {
           </div>
           {/* company 3 */}
           <div className="">
-            <img className="w-[522px] h-[300px] rounded-tr-[25px]" src={companyimg1} alt="" />
+            <img
+              className="w-[522px] h-[300px] rounded-tr-[25px] duration-500 hover:scale-102"
+              src={companyimg1}
+              alt=""
+            />
             <div className="expo bg-[#EEF3FF] py-7 relative rounded-b-2xl px-5">
               <div className="bg-[#FF6600] absolute top-[-30%] w-[300px] flex items-center justify-center p-2 rounded-full">
                 <CiLocationOn className="text-white text-2xl" />
@@ -323,6 +382,100 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
+
+      {/* Get Dealership  */}
+      <section id="dealership" className="p-5 duration-500 mt-220 md:mt-120 lg:mt-35">
+        <h1 className="text-[48px] font-[700] text-center">Get Dealership </h1>
+        <div className="flex justify-center mt-5">
+          .
+          <div className="bg-[#F5F1F0] space-y-4 lg:space-y-0 lg:flex  justify-center p-5">
+            {/* contact */}
+            <div className="p-5 pt-0 flex flex-col gap-20">
+              <h2 className="max-w-[390px] text-[40px] popins ">
+                Let’s discuss <br /> on something{" "}
+                <span className="text-[#3C8BDA]">cool</span> together
+              </h2>
+              {/* main */}
+              <div className="flex flex-col gap-25">
+             {/* con phon */}
+             <div className="flex flex-col gap-6">
+                   <div className="flex items-center gap-2">
+                  <MdOutlineMail className="font-[500] text-[20px] text-[#1976D3]"/>
+                  <h1 className="text-[20px] font-[500]">Loremispum@gmail.com</h1>
+                </div>
+                <div className="flex items-center px-3 shadow-[2px_3px_5px_rgba(0,0,0,0.4)] gap-2 bg-[#7BC6F7] p-2 rounded text-[20px] font-[500] popins">
+                  <FaPhoneAlt />
+                  <h1>+123 456 789</h1>
+                </div>
+                <div className="flex items-center gap-2">
+                  <IoLocationSharp className="font-[500] text-[20px] text-[#1976D3]"/>
+                  <h1 className="text-[20px] font-[500]">123 Street 456 House</h1>
+                </div>
+             </div>
+                <div className="flex items-center gap-2">
+                  <div className="text-white bg-[#1976D3] duration-700 hover:text-[#1976D3] hover:bg-white shadow rounded-full p-2 w-[64px] h-[64px] flex justify-center items-center text-[48px]">
+                    <TiSocialFacebook />
+                  </div>
+                  <div className="text-white bg-[#1976D3] duration-700 hover:text-[#1976D3] hover:bg-white shadow rounded-full p-2 w-[64px] h-[64px] flex justify-center items-center text-[40px]">
+                    <CiInstagram />
+                  </div>
+                  <div className="text-white bg-[#1976D3] duration-700 hover:text-[#1976D3] hover:bg-white shadow rounded-full p-2 w-[64px] h-[64px] flex justify-center items-center text-[40px]">
+                    <FaTwitter />
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* form */}
+            <div className="bg-white  p-5 rounded md:w-[500px] h-[600px]  relative">
+              <h1 className="text-[20px] font-[500] text-[#2E0249] popins">I’m interested in...</h1>
+              <div className="popins flex items-center mt-3 flex-wrap gap-3">
+                <button className="rounded duration-500 hover:text-[#ffffff] hover:bg-[#7BC6F7] shadow text-[20px] font-[500] p-2 bg-[#7BC6F7] px-5">
+                  Delership
+                </button>
+                <button className="rounded duration-500 hover:text-[#ffffff] hover:bg-[#7BC6F7] shadow text-[20px] font-[500] p-2 bg-[rgba(46,2,73,0.1)] px-5 text-[rgba(46,2,73,0.5)] border-2 border-[#2E02494D]">
+                  asddcv f
+                </button>
+                <button className="rounded duration-500 hover:text-[#ffffff] hover:bg-[#7BC6F7] shadow text-[20px] font-[500] p-2 bg-[rgba(46,2,73,0.1)] px-5 text-[rgba(46,2,73,0.5)] border-2 border-[#2E02494D]">
+                  gzdgdfgb
+                </button>
+                <button className="rounded duration-500 hover:text-[#ffffff] hover:bg-[#7BC6F7] shadow text-[20px] font-[500] p-2 bg-[rgba(46,2,73,0.1)] px-5 text-[rgba(46,2,73,0.5)] border-2 border-[#2E02494D]">
+                  sdfsfsgsgs
+                </button>
+                <button className="rounded duration-500 hover:text-[#ffffff] hover:bg-[#7BC6F7] shadow text-[20px] font-[500] p-2 bg-[rgba(46,2,73,0.1)] px-2 text-[rgba(46,2,73,0.5)] border-2 border-[#2E02494D]">
+                  Other
+                </button>
+              </div>
+              <form className="flex flex-col gap-40 mt-5">
+                <div className="flex flex-col gap-5 ">
+                  <input
+                  required
+                    type="text"
+                   className="border-b-2 p-2 duration-500 outline-0 hover:border-[#7BC6F7]"
+                    placeholder="You name"
+                    
+                  />
+                  <input
+                  required
+                    type="text"
+                  className="border-b-2 p-2 duration-500 outline-0 hover:border-[#7BC6F7]"
+                    placeholder="Email"
+                  />
+                  <textarea required
+                    type="text"
+                    className="border-b-2 p-2 duration-500 outline-0 hover:border-[#7BC6F7]"
+                    placeholder="Message"
+                  />
+                </div>
+
+                <button className="text-[20px] duration-700 hover:text-[#1976D3]
+                 hover:bg-[rgba(25,118,211,0.5)] shadow w-[250px] py-1 font-[500] text-center flex rounded items-center justify-center gap-3 px-4 bg-[#7BC6F7]">
+                  <IoIosSend /> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
